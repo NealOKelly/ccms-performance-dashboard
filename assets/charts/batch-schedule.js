@@ -26,6 +26,7 @@
             title: 'Average runtime for the last 7 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
+			legend: {position: 'none'},
           };
 	
 		
@@ -55,6 +56,7 @@
             title: 'Average runtime for the last 7 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
+			legend: {position: 'none'},
           };
 	
 		
@@ -83,6 +85,7 @@
             title: 'Average runtime for the last 7 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
+			legend: {position: 'none'},
           };
 	
 		
@@ -111,6 +114,7 @@
             title: 'Average runtime for the last 7 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
+			legend: {position: 'none'},
           };
 	
 		
