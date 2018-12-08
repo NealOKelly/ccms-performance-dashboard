@@ -29,6 +29,7 @@
   <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
   <!-- Get google charts loader -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="assets/charts/deferred-upload.js"></script>
 </head>
 
 <body class="govuk-template__body ">
@@ -44,9 +45,10 @@
 
       <div class="govuk-header__logo">
         <a href="/ccms-performance-dashboard" class="govuk-header__link govuk-header__link--homepage">
-            <img src="assets/images/laa-logo.gif" style="height: 32px;">
+            <img src="assets/images/laa-logo.gif" style="height: 32px;"">
         </a>
       </div>
+	  	      <div class="govuk-header__content">
 
       <a href="#" class="govuk-header__link govuk-header__link--service-name">
         CCMS Monitoring Dashboard
@@ -58,16 +60,20 @@
 
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper " id="main-content" role="main">
-      <h1 class="govuk-heading-xl">CCMS Performance Dashboard</h1>
-	  <p class="govuk-body">This site provides viualisations of data collected as part of the operation managemenet of the LAA's Client & Cost Management System. The collection and/or collations of the data requires manual interventions. The site should therefore not be mistaken for a realtime monitoring tool.</p>
-	  <p class="govuk-body">The underlying data is maintained in <a href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>				  
-		<ul class="govuk-list">
-			<li><a class="govuk-link" href="network-latency.html">Network Latency</a></li>
-			<li><a class="govuk-link" href="network-throughput.html">Network Throughput</a></li>
-			<li><a class="govuk-link" href="batch-schedule.html">Batch Schedule</a></li>
-			<li><a class="govuk-link" href="deferred-upload.html">Deferred Upload</a></li>
-  		</ul>							  
-							  
+	<a href="index.html" class="govuk-back-link">Back</a>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Deferred upload</h1>
+        <p class="govuk-body">This page shows data relating to the number of documents pending upload to Northgate.  These data are supplied by Capgemini as part of their daily checks. They are derived by manually executing a query.  The actual time the query is executed may vary.</p>
+		
+		<p class="govuk-body">These data are held in - and can be edited using - <a href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>
+		
+		<div id="deferred-upload-chart" style="width: 800px; height: 500px; margin-bottom: 50px;"></div>
+
+	  </div>
+	
+    </div>
+
     </main>
   </div>
 
@@ -92,7 +98,7 @@
     </div>
   </footer>
 
-  <script src="/govuk-frontend/all.js"></script>
+  <script src="assets/javascripts/all.js"></script>
   <script>
     window.GOVUKFrontend.initAll()
 
