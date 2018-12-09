@@ -27,6 +27,8 @@
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
+			vAxis: {title: 'minutes',
+        },
           };
 	
 		
@@ -57,6 +59,8 @@
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
+			vAxis: {title: 'minutes',
+        },
           };
 	
 		
@@ -86,6 +90,8 @@
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
+			vAxis: {title: 'minutes',
+        },
           };
 	
 		
@@ -115,6 +121,8 @@
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
+			vAxis: {title: 'minutes',
+        },
           };
 	
 		
