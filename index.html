@@ -62,21 +62,25 @@
 	<div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">CCMS Performance Portal</h1>
-	  <p class="govuk-body">This site provides viualisations of data collected as part of the operation managemenet of the LAA's Client &amp; Cost Management System. The collection and/or collations of the data requires manual interventions. The site should therefore not be mistaken for a realtime monitoring tool.</p>
-	  <p class="govuk-body">The underlying data is maintained in <a class="govuk-link" href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>				  
-		<ul class="govuk-list">
+	  <p class="govuk-body">This site provides viualisations of data collected as part of the operation managemenet of the LAA's Client &amp; Cost Management System. The collection and/or collation of the data requires manual intervention. The site should therefore not be mistaken for a realtime monitoring tool.</p>
+	  	  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">									<h2 class="govuk-heading-m">Performance metrics</h2>	
+		<ul class="govuk-list govuk-list--bullet">
 			<li><a class="govuk-link" href="network-latency.html">Network Latency</a></li>
 			<li><a class="govuk-link" href="network-throughput.html">Network Throughput</a></li>
 			<li><a class="govuk-link" href="batch-schedule.html">Batch Schedule</a></li>
 			<li><a class="govuk-link" href="deferred-upload.html">Deferred Upload</a></li>
-  		</ul>							  
+		  </ul>
+		  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">	
+		  <p class="govuk-body">The underlying data is maintained in <a class="govuk-link" href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>
 		</div>
 	<div class="govuk-grid-column-one-third">
 		<div class="govuk-header__container"></div>
 		<div style="height: 20px;"></div>
 	<h2 class="govuk-heading-m">Service Status</h2>
-	<!--  Service Status -->
+	<p class="govuk-body">The Service Status application is not based on realtime data and &mdash; as such &mdash; may not be an accurate reflection of the current status of the service.</p>
+		<!--  Service Status -->
 	<iframe id="scaled-frame" src="https://laa-dashboard.firebaseapp.com/" height="600" width="285" frameborder="0" scrolling="no"></iframe>
+
 	</div>		
 		</div>
     </main>
