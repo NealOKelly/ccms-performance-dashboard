@@ -2380,7 +2380,7 @@ only screen and (min-resolution:192dpi) {
     display: inline-block;
     min-width: 125px;
     padding-top: 112px;
-    background-image: url(/ccms-performance-dashboard/assets/images/govuk-crest.png);
+    background-image: url(../images/govuk-crest.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: 125px 102px;
