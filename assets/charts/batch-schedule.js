@@ -23,8 +23,8 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 14 days',
-            subtitle: '(minutes)',
+            title: 'Continuous Background Set 1',
+            subtitle: 'Average runtime for the last 14 days',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
 			vAxis: {title: 'minutes',
@@ -55,8 +55,8 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 14 days',
-            subtitle: '(minutes)',
+            title: 'Continuous Background Set 2',
+            subtitle: 'Average runtime for the last 14 days',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
 			vAxis: {title: 'minutes',
@@ -86,8 +86,8 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 14 days',
-            subtitle: '(minutes)',
+            title: 'Continuous Background Set 3',
+            subtitle: 'Average runtime for the last 14 days',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
 			vAxis: {title: 'minutes',
@@ -117,8 +117,8 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 14 days',
-            subtitle: '(minutes)',
+            title: 'Provider Synchronisation',
+            subtitle: 'Average runtime for the last 14 days',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
 			vAxis: {title: 'minutes',
