@@ -17,7 +17,7 @@
     font-display: fallback
 }
 
-@font-face {
+@font-face {c
     font-family: nta;
     src: url(assets/fonts/bold-fb2676462a-v1.eot);
     src: url(assets/fonts/bold-fb2676462a-v1.eot?#iefix) format("embedded-opentype"), url(assets/fonts/bold-a2452cb66f-v1.woff2) format("woff2"), url(assets/fonts/bold-f38c792ac2-v1.woff) format("woff");
@@ -2380,7 +2380,7 @@ only screen and (min-resolution:192dpi) {
     display: inline-block;
     min-width: 125px;
     padding-top: 112px;
-    background-image: url(../../images/govuk-crest.png);
+    background-image: url(/ccms-performance-dashboard/assets/images/govuk-crest.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: 125px 102px;

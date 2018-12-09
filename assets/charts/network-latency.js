@@ -25,7 +25,9 @@
             title: 'Round Trip Time: Client <> Forms Server',
             subtitle: 'Comparison of network journeys',
 			colors: ['#d53880', '#28a197', '#005ea5'],
-          };
+			vAxis: {title: 'ms', ticks: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+        }
+			};
 	
 		
       var data = response.getDataTable();
@@ -57,6 +59,7 @@
             title: 'Variance: VDI',
             subtitle: 'Minmimum, Average and Maximum',
 			colors: ['#006435', '#ffbf47', '#b10e1e'],
+			vAxis: {title: 'ms', ticks: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],}
           };
 
       var data = response.getDataTable();
