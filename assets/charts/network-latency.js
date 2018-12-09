@@ -7,10 +7,10 @@
 	
 		
    function drawComparisonChart() {
-      var range = 'A1:A,C1:C,F1:F,I1:I';
+      var range = 'A2:D16';
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Network-Latency&headers=1&tq&range=' + range);
+          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data-2&headers=1&tq&range=' + range);
       query.send(handleComparisonQueryResponse);
  
     }
@@ -38,10 +38,10 @@
 		
 				// variance chart VDI
 		   function drawVarianceVDIChart() {
-      var range = 'A:D';
+      var range = 'F2:I16';
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Network-Latency&headers=1&tq&range=' + range);
+          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data-2&headers=1&tq&range=' + range);
       query.send(handleVarianceVDIQueryResponse);
  
     }

@@ -5,7 +5,7 @@
 	
 		
    function drawDeferredUploadChart() {
-      var range = 'J2:K9';
+      var range = 'J2:K16';
 
       var query = new google.visualization.Query(
           'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data&headers=1&tq&range=' + range);

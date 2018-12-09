@@ -21,13 +21,15 @@
         return;
       }
 
-		var options = {
-            title: 'Round Trip Time: Client <> Forms Server',
-            subtitle: 'Comparison of network journeys',
-			colors: ['#d53880', '#28a197', '#005ea5'],
-          };
 	
-		
+				var options = {
+            title: 'Round Trip Time between the client and the forms server for VDI, internet and Dom1 users',
+			legend: 'bottom',
+            colors: ['#d53880', '#28a197', '#005ea5'],
+			vAxis: {title: 'bytes/second',
+        }
+          };
+
       var data = response.getDataTable();
       var chart = new google.charts.Bar(document.getElementById('comparison'));
       chart.draw(data, { height: 400 });

@@ -8,7 +8,7 @@
 	
 		
    function drawSet1Chart() {
-      var range = 'A2:B9';
+      var range = 'A2:B16';
 
       var query = new google.visualization.Query(
           'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data&headers=1&tq&range=' + range);
@@ -23,7 +23,7 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 7 days',
+            title: 'Average runtime for the last 14 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
@@ -38,7 +38,7 @@
 
 		
    function drawSet2Chart() {
-      var range = 'C2:D9';
+      var range = 'C2:D16';
 
       var query = new google.visualization.Query(
           'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data&headers=1&tq&range=' + range);
@@ -53,7 +53,7 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 7 days',
+            title: 'Average runtime for the last 14 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
@@ -67,7 +67,7 @@
     }
 
    function drawSet3Chart() {
-      var range = 'E2:F9';
+      var range = 'E2:F16';
 
       var query = new google.visualization.Query(
           'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data&headers=1&tq&range=' + range);
@@ -82,7 +82,7 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 7 days',
+            title: 'Average runtime for the last 14 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
@@ -96,7 +96,7 @@
     }
 
    function drawPSChart() {
-      var range = 'G2:H9';
+      var range = 'G2:H16';
 
       var query = new google.visualization.Query(
           'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data&headers=1&tq&range=' + range);
@@ -111,7 +111,7 @@
       }
 
 		var options = {
-            title: 'Average runtime for the last 7 days',
+            title: 'Average runtime for the last 14 days',
             subtitle: '(minutes)',
 			colors: ['#d53880'],
 			legend: {position: 'none'},
