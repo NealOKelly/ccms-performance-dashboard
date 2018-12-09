@@ -23,7 +23,7 @@
 
 	
 				var options = {
-            title: 'Round Trip Time between the client and the forms server for VDI, internet and Dom1 users',
+            title: 'Throughput between the client and the forms server for VDI, internet and Dom1 users',
 			legend: 'bottom',
             colors: ['#d53880', '#28a197', '#005ea5'],
 			vAxis: {title: 'bytes/second',
@@ -56,9 +56,10 @@
       }
 
 		var options = {
-            title: 'Variance: VDI',
-            subtitle: 'Minmimum, Average and Maximum',
-			colors: ['#006435', '#ffbf47', '#b10e1e'],
+            title: 'VDI: minimum, average and maximum throughput',
+            colors: ['#006435', '#ffbf47', '#b10e1e'],
+						vAxis: {title: 'bytes/second',
+        }
           };
 
       var data = response.getDataTable();
@@ -87,10 +88,11 @@
       }
 
 		var options = {
-            title: 'Variance: Internet',
-            subtitle: 'Minmimum, Average and Maximum',
-			colors: ['#006435', '#ffbf47', '#b10e1e'],
-        };
+            title: 'Internet: minimum, average and maximum throughput',
+            colors: ['#006435', '#ffbf47', '#b10e1e'],
+			vAxis: {title: 'bytes/second',
+        }
+          };
 
       var data = response.getDataTable();
       var chart = new google.charts.Bar(document.getElementById('variance_internet'));
@@ -117,11 +119,12 @@
         return;
       }
 
-var options = {
-  title: 'Variance: dom1',
-subtitle: 'Minmimum, Average and Maximum',
-  colors: ['#006435', '#ffbf47', '#b10e1e'],
-};
+		var options = {
+            title: 'Dom1: minimum, average and maximum throughput',
+            colors: ['#006435', '#ffbf47', '#b10e1e'],
+			vAxis: {title: 'bytes/second',
+        }
+          };
 
 
       var data = response.getDataTable();
