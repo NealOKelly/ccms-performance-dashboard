@@ -7,10 +7,10 @@
 	
 		
    function drawComparisonChart() {
-      var range = 'A1:A,C1:C,F1:F,I1:I';
+      var range = 'A2:D16';
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Network-Throughput&headers=1&tq&range=' + range);
+          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data-Throughput&headers=1&tq&range=' + range);
       query.send(handleComparisonQueryResponse);
  
     }
@@ -39,10 +39,10 @@
 		
 				// variance chart VDI
 		   function drawVarianceVDIChart() {
-      var range = 'A:D';
+      var range = 'F2:I16';
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Network-Throughput&headers=1&tq&range=' + range);
+          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data-Throughput&headers=1&tq&range=' + range);
       query.send(handleVarianceVDIQueryResponse);
  
     }
@@ -70,10 +70,10 @@
 					// variance chart internet
 		   function drawVarianceInternetChart() {
 			   
-      var range = 'A1:A,E:G';
+      var range = 'K2:N16';
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Network-Throughput&headers=1&tq&range=' + range);
+          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data-Throughput&headers=1&tq&range=' + range);
       query.send(handleVarianceInternetQueryResponse);
  
     }
@@ -101,10 +101,10 @@
 						// variance dom1 internet
 		   function drawVarianceDom1Chart() {
 			   
-      var range = 'A1:A,H:J';
+      var range = 'P2:S16';
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Network-Throughput&headers=1&tq&range=' + range);
+          'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data-Throughput&headers=1&tq&range=' + range);
       query.send(handleVarianceDom1QueryResponse);
  
     }
