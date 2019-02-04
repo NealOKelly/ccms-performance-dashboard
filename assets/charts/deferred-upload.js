@@ -21,7 +21,7 @@ function handleDeferredUploadQueryResponse(response) {
 
 	var options = {
 		title: 'Documents pending upload to Northgate',
-		colors: ['#d53880'],
+		colors: ['#005ea5'],
 		legend: {
 			position: 'none'
 		},
