@@ -32,7 +32,7 @@
       			position: 'none'
       		},
       		vAxis: {
-      			title: 'minutes',
+      			title: 'Minutes',
       		},
       	};
 
