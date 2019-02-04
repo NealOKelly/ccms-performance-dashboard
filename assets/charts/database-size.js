@@ -24,6 +24,9 @@
       	var options = {
       		title: 'Size of seleced table spaces (kB)',
       		colors: ['#d53880', '#006435', '#b10e1e', '#ffbf47', '#912b88', '#f47738', '#28a197', '#b58840'],
+			legend: {
+      		position: 'right'
+      		},
       		isStacked: 'true',
       		vAxis: {
       			format: 'long',
@@ -34,6 +37,9 @@
 
       	var data = response.getDataTable();
       	var chart = new google.visualization.AreaChart(document.getElementById('database-size-chart'));
+		chart.draw(data, {
+      		height: 400
+      	});
       	chart.draw(data, options);
 
       }
