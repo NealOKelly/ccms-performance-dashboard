@@ -27,7 +27,7 @@
       		position: 'bottom'
       		},
       		isStacked: 'false',
-			colors: ['#2e358b', '#0b0c0c', '#b10e1e'],
+			colors: ['#2b8cc4', '#ffbf47', '#df3034'],
       		vAxis: {
       			format: 'long',
 				ticks: [0, 1000000000, 2000000000, 3000000000, 4000000000, 5000000000]
