@@ -5,7 +5,7 @@
       
 	// Database size
 	function drawDBSizeChart() {
-      	var range = 'A:D';
+      	var range = 'A:F';
 
       	var query = new google.visualization.Query(
       		'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Database-Size&headers=1&tq&range=' + range);
@@ -22,16 +22,17 @@
       	var options = {
       		title: 'Size, Used Space & High Water Mark (kB).',
       		legend: {
-      		position: 'bottom'
+      		position: 'right'
       		},
       		isStacked: 'false',
-			colors: ['#005ea5', '#6f777b', '#b10e1e'],
+			colors: ['#005ea5', '#6f777b', '#b10e1e', '#006435', '#ffbf47'],
       		vAxis: {
       			format: 'long',
 				ticks: [0, 1000000000, 2000000000, 3000000000, 4000000000, 5000000000]
       		},
 			series: {
-            2: { lineDashStyle: [7, 3] }
+            2: { lineDashStyle: [7, 3] },
+			4: { lineDashStyle: [7, 3] }
           }
       	};
 
