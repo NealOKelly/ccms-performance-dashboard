@@ -1,21 +1,18 @@
       google.charts.load('current', {
-      	'packages': ['corechart']
+      	'packages': ['bar', 'corechart', 'line']
       });
-      google.charts.setOnLoadCallback(drawDeferredUploadChart);
+      google.charts.setOnLoadCallback(drawDBDetailsChart);
 
-
-
-
-      function drawDeferredUploadChart() {
+      function drawDBDetailsChart() {
       	var range = 'M2:U16';
 
       	var query = new google.visualization.Query(
       		'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=Chart-Data&headers=1&tq&range=' + range);
-      	query.send(handleDeferredUploadQueryResponse);
+      	query.send(handleDBDetailsQueryResponse);
 
       }
 
-      function handleDeferredUploadQueryResponse(response) {
+      function handleDBDetailsQueryResponse(response) {
       	if (response.isError()) {
       		alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
       		return;
@@ -36,7 +33,7 @@
 
 
       	var data = response.getDataTable();
-      	var chart = new google.visualization.AreaChart(document.getElementById('database-size-chart'));
+      	var chart = new google.visualization.AreaChart(document.getElementById('database-size-detail-chart'));
 		chart.draw(data, {
       		height: 400
       	});

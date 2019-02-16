@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>LAA - CCMS Performance Portal</title>
+  <title>LAA - CCMS Performance Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0c0c" />
 
@@ -30,7 +30,8 @@
   <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
   <!-- Get google charts loader -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript" src="assets/charts/database-size.js"></script>
+  <script type="text/javascript" src="assets/charts/database-size-overview.js"></script>
+  <script type="text/javascript" src="assets/charts/database-size-detail.js"></script>
 </head>
 
 <body class="govuk-template__body ">
@@ -63,10 +64,14 @@
 	<a href="index.html" class="govuk-back-link">Back</a>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Database size</h1>
-		<div id="database-size-chart" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
+        <h1 class="govuk-heading-xl">Database</h1>
+		<h2 class="govuk-heading-m">Overall size</h2>
+		<div id="database-size-overview-chart" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
 		<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-		<h2 class="govuk-heading-m">About the data</h2>
+		<h2 class="govuk-heading-m">Breakdown</h2>
+		<div id="database-size-detail-chart" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
+		<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+		  <h2 class="govuk-heading-m">About the data</h2>
 		<p class="govuk-body">These data are held in - and can be edited using - <a href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>
 		<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 		<h2 class="govuk-heading-m">What does it measure?</h2>
@@ -80,17 +85,46 @@
 		<div class="govuk-header__container"></div>
 		<div style="height: 20px;"></div>
 	<h2 class="govuk-heading-m">Quick links</h2>
+  
   <ul class="govuk-list govuk-list--bullet">
-  <li><a class="govuk-link" href="batch-schedule.html">Batch Schedule</a></li>  
-  <li><a class="govuk-link" href="business-rules-monitor.html">Business Rules Monitor</a></li>  
-  <li><a class="govuk-link" href="database-size.html">Database Size</a></li>
-  <li><a class="govuk-link" href="deferred-upload.html">Deferred Upload</a></li>
-  <li><a class="govuk-link" href="network-latency.html">Network Latency</a></li>
-  <li><a class="govuk-link" href="network-throughput.html">Network Throughput</a></li>
-  <li><a class="govuk-link" href="purging.html">Purging</a></li>
-  <li><a class="govuk-link" href="user-locations-uk.html">User Locations (UK)</a></li>
-  <li><a class="govuk-link" href="user-locations-world.html">User Locations (World)</a></li>
-        </ul>
+  	<li>Database</li>
+  	<ul class="govuk-list govuk-list--bullet">
+		<li><a class="govuk-link" href="database.html">Database Size</a></li>
+		<li><a class="govuk-link" href="business-rules-monitor.html">Performance</a></li>  
+  	</ul>
+  </ul>					
+				
+<ul class="govuk-list govuk-list--bullet">
+  <li>Network</li>
+  	<ul class="govuk-list govuk-list--bullet">
+		<li><a class="govuk-link" href="network-latency.html">Network Latency</a></li>
+  		<li><a class="govuk-link" href="network-throughput.html">Network Throughput</a></li> 
+  	</ul>
+</ul>	  
+  
+  
+  
+
+  
+				
+  <ul class="govuk-list govuk-list--bullet">
+  	<li>Geo</li>
+  	<ul class="govuk-list govuk-list--bullet">
+		<li><a class="govuk-link" href="user-locations-uk.html">User Locations (UK)</a></li>
+  		<li><a class="govuk-link" href="user-locations-world.html">User Locations (World)</a></li>
+  	</ul>
+  </ul>
+  <ul class="govuk-list govuk-list--bullet">
+  	<li>Other</li>
+  	<ul class="govuk-list govuk-list--bullet">
+		<li><a class="govuk-link" href="batch-schedule.html">Batch Schedule</a></li>
+		<li><a class="govuk-link" href="deferred-upload.html">Deferred Upload</a></li>
+  	</ul>
+  </ul>				
+				
+				
+				
+				
 		<h2 class="govuk-heading-m">Other useful links</h2>
 		<ul class="govuk-list govuk-list--bullet">
 			<li><a class="govuk-link" href="https://portal.legalservices.gov.uk" target="_blank">LAA Online Portal</a></li>

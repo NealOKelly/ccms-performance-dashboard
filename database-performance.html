@@ -2,7 +2,7 @@
 <html lang="en" class="govuk-template ">
 <head>
 <meta charset="utf-8" />
-<title>LAA - CCMS Performance Portal</title>
+<title>LAA - CCMS Performance Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0b0c0c" />
 <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon" />
@@ -28,7 +28,7 @@
 <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
 <!-- Get google charts loader -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="assets/charts/business-rules-monitor.js"></script>
+<script type="text/javascript" src="assets/charts/database-performance-brm.js"></script>
 </head>
 
 <body class="govuk-template__body ">
@@ -48,7 +48,7 @@
       <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
           <h1 class="govuk-heading-xl">Business Rules Monitor</h1>
-          <div id="business-rules-monitor" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
+          <div id="database-performance-brm-chart" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
           <h2 class="govuk-heading-m">About the data</h2>
           <p class="govuk-body">This page shows data collected supplied by LAA's Digital DBA team as part of their daily checks</a>. An <a href="tools/brm-data-transformation-tool.xlsm">Excel Macro</a> is used to transform the data, after which it manually uploaded to <a class="govuk-link" href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>
