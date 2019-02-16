@@ -41,7 +41,7 @@
   <div class="govuk-header__container govuk-width-container">
       <div class="govuk-header__logo"> <a href="https://www.gov.uk/government/organisations/legal-aid-agency" class="govuk-header__link govuk-header__link--homepage"> <img src="assets/images/laa-logo.gif" style="height: 32px;"> </a> </div>
       <a href="/ccms-performance-dashboard" class="govuk-header__link govuk-header__link--service-name"> CCMS Performance Portal </a> </div>
-  </div>
+  
 </header>
   <div class="govuk-width-container">
   <main class="govuk-main-wrapper " id="main-content" role="main"> <a href="index.html" class="govuk-back-link">Back</a>
@@ -51,7 +51,7 @@
           <div id="database-performance-brm-chart" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
           <h2 class="govuk-heading-m">About the data</h2>
-          <p class="govuk-body">This page shows data collected supplied by LAA's Digital DBA team as part of their daily checks</a>. An <a href="tools/brm-data-transformation-tool.xlsm">Excel Macro</a> is used to transform the data, after which it manually uploaded to <a class="govuk-link" href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>
+          <p class="govuk-body">This page shows data collected supplied by LAA's Digital DBA team as part of their daily checks. An <a href="tools/brm-data-transformation-tool.xlsm">Excel Macro</a> is used to transform the data, after which it manually uploaded to <a class="govuk-link" href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
           <h2 class="govuk-heading-m">What does it measure?</h2>
           <p class="govuk-body">The Business Rules Monitor controls the workflow within CCMS.  There are numerous jobs orchestrated by the Business Rules Monitor.  The chart delay data relating to a specific job &mdash; App Review.  App Review was chosen as are it has quite long execution times, so any variability in its performance will be more easily observable than most other jobs.</p>
@@ -63,24 +63,7 @@
       <div class="govuk-grid-column-one-third">
           <div class="govuk-header__container"></div>
           <div style="height: 20px;"></div>
-          <h2 class="govuk-heading-m">Quick links</h2>
-  <ul class="govuk-list govuk-list--bullet">
-  <li><a class="govuk-link" href="batch-schedule.html">Batch Schedule</a></li>  
-  <li><a class="govuk-link" href="business-rules-monitor.html">Business Rules Monitor</a></li>  
-  <li><a class="govuk-link" href="database-size.html">Database Size</a></li>
-  <li><a class="govuk-link" href="deferred-upload.html">Deferred Upload</a></li>
-  <li><a class="govuk-link" href="network-latency.html">Network Latency</a></li>
-  <li><a class="govuk-link" href="network-throughput.html">Network Throughput</a></li>
-  <li><a class="govuk-link" href="purging.html">Purging</a></li>
-  <li><a class="govuk-link" href="user-locations-uk.html">User Locations (UK)</a></li>
-  <li><a class="govuk-link" href="user-locations-world.html">User Locations (World)</a></li>
-        </ul>
-          <h2 class="govuk-heading-m">Other useful links</h2>
-          <ul class="govuk-list govuk-list--bullet">
-          <li><a class="govuk-link" href="https://portal.legalservices.gov.uk" target="_blank">LAA Online Portal</a></li>
-          <li><a class="govuk-link" href="https://analytics.google.com/analytics/" target="_blank">Google Analytics</a></li>
-          <li><a class="govuk-link" href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a></li>
-        </ul>
+          <!--#include virtual="assets/includes/quick-links.html" -->
         </div>
     </div>
     </main>
