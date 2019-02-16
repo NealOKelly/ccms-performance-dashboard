@@ -20,7 +20,7 @@
       	}
 
       	var options = {
-      		title: 'Purging',
+      		title: 'Size, Used Space & High Water Mark (kB).',
       		legend: {
       		position: 'bottom'
       		},
