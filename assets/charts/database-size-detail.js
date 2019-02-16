@@ -19,7 +19,7 @@
       	}
 
       	var options = {
-      		title: 'Size of seleced table spaces (kB)',
+      		title: 'Used space of seleced table spaces (kB)',
       		colors: ['#d53880', '#006435', '#b10e1e', '#ffbf47', '#912b88', '#f47738', '#28a197', '#b58840'],
 			legend: {
       		position: 'right'
