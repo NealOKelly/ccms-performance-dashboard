@@ -22,10 +22,10 @@
       	var options = {
       		title: 'Size, Used Space & High Water Mark (kB).',
       		legend: {
-      		position: 'right'
+      		position: 'bottom'
       		},
       		isStacked: 'false',
-			colors: ['#005ea5', '#6f777b', '#b10e1e', '#006435', '#ffbf47'],
+			colors: ['#6f777b', '#005ea5', '#b10e1e', '#006435', '#ffbf47'],
       		vAxis: {
       			format: 'long',
 				ticks: [0, 1000000000, 2000000000, 3000000000, 4000000000, 5000000000]
@@ -33,7 +33,9 @@
 			series: {
             2: { lineDashStyle: [7, 3] },
 			4: { lineDashStyle: [7, 3] }
-          }
+          },chartArea: {
+    			width: 500
+		  	}
       	};
 
 
