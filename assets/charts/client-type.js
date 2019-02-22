@@ -19,12 +19,18 @@
       	}
 
       	var options = {
-      		title: 'Used space of seleced table spaces (kB)',
+      		title: 'HTTP requests by client type.',
       		colors: ['#0b0c0c', '#b10e1e', '#ffbf47', '#006435'],
 			legend: {
       		position: 'bottom'
       		},
-			isStacked: 'percent'
+			isStacked: 'percent',
+			chartArea: {
+    		left: 40,
+    		top: 10,
+    		width: 500,
+    
+			}
       	};
 
 
@@ -36,3 +42,4 @@
       	chart.draw(data, options);
 
       }
+window.addEventListener('resize', drawClientTypeChart, false);
