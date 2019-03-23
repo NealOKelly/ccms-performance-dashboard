@@ -1,0 +1,40 @@
+/* CSS Document */
+
+/*! Copyright (c) 2011 by Margaret Calvert & Henrik Kubel. All rights reserved. The font has been customised for exclusive use on gov.uk. This cut is not commercially available. */
+
+@font-face {
+    font-family: nta;
+    src: url../fonts/light-v1.eot);
+    src: url(../fonts/light-v1.eot?#iefix) format("embedded-opentype"), url(../fonts/light-v1.woff2) format("woff2"), url(../fonts/light-v1.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback
+}
+
+@font-face {c
+    font-family: nta;
+    src: url(../fonts/bold-v1.eot);
+    src: url(../fonts/bold-v1.eot#iefix) format("embedded-opentype"), url(../fonts/bold-v1.woff2) format("woff2"), url(../fonts/bold-v1.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: ntatabularnumbers;
+    src: url(../fonts/light-tabular-v1.eot);
+    src: url(../fonts/light-tabular--v1.eot?#iefix) format("embedded-opentype"), url(../fonts/light-tabular-v1.woff2) format("woff2"), url(../fonts/light-tabular-v1.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: ntatabularnumbers;
+    src: url(../fonts/bold-tabular-v1.eot);
+    src: url(../fonts/bold-tabular-v1.eot?#iefix) format("embedded-opentype"), url(../fonts/bold-tabular-v1.woff2) format("woff2"), url(../fonts/bold-tabularv1.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback
+}
+
