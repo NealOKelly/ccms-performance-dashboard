@@ -1,5 +1,6 @@
 <!--#include virtual="assets/includes/gds-header.html" -->
 	<script type="text/javascript" src="charts/database-performance-brm-app-review.js"></script>
+	<script type="text/javascript" src="charts/database-performance-brm-app-grant.js"></script>
   <div class="govuk-width-container">
   <main class="govuk-main-wrapper " id="main-content" role="main"> <a href="index.html" class="govuk-back-link">Back</a>
       <div class="govuk-grid-row">
@@ -7,11 +8,13 @@
           <h1 class="govuk-heading-xl">Database performance</h1>
           <div id="database-performance-brm-chart-app-review" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+		  <div id="database-performance-brm-chart-app-grant" style="width: 600px; height: 375px; margin-bottom: 50px;"></div>
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
           <h2 class="govuk-heading-m">About the data</h2>
           <p class="govuk-body">This page shows data collected supplied by LAA's Digital DBA team as part of their daily checks. An <a class="govuk-link" href="tools/brm-data-transformation-tool.xlsm">Excel Macro</a> is used to transform the data, after which it manually uploaded to <a class="govuk-link" href="https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/edit?usp=sharing" target="_blank">Google Sheets</a>.</p>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
           <h2 class="govuk-heading-m">What does it measure?</h2>
-          <p class="govuk-body">The Business Rules Monitor controls the workflow within CCMS.  There are numerous jobs orchestrated by the Business Rules Monitor.  The chart delay data relating to a specific job &mdash; App Review.  App Review was chosen as are it has quite long execution times, so any variability in its performance will be more easily observable than most other jobs.</p>
+          <p class="govuk-body">The Business Rules Monitor controls the workflow within CCMS.  There are numerous jobs orchestrated by the Business Rules Monitor.  The charts display data relating to two specifics job &mdash; App Review & App Grant.  App Review was chosen as it has quite long execution times, so any variability in its performance will be more easily observable than most other jobs.  App Grant was chosen as significant variability in execution times has been observerd.</p></p>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
           <h2 class="govuk-heading-m">Why does it matter?</h2>
           <p class="govuk-body">The performance of the Business Rules Monitor can be thought of as a proxy indicator for overall system performance. Longer runtimes might mean a degradation in performance (or &mdash; alternatively &mdash; an increase in workload).</p>
