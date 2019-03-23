@@ -8,7 +8,7 @@ function drawDBPerformanceBRMChartAppReview() {
 	var range = 'A2:B';
 
       	var query = new google.visualization.Query(
-      		'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=BRM-Performance&headers=1&tq&range=' + range);
+      		'https://docs.google.com/spreadsheets/d/1gUcd_R_vnJDtSNlkrSGsvcJe-bKd8lDqJALeDAKEYpA/gviz/tq?sheet=BRM-Performance-App-Review&headers=1&tq&range=' + range);
       	query.send(handleDBPerformanceBRMAppReviewQueryResponse);
 
       }
